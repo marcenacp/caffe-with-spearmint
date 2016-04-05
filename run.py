@@ -55,8 +55,6 @@ demandpath(SPEARMINT_ROOT + '/spearmint/cleanup.sh', 'Spearmint cleanup script w
 demandpath(MONGODB_BIN, 'MongoDB is not installed? Server binary not found at %s.')
 
 warningpath(args.experiment + '/data/mean_train.binaryproto', 'WARNING: image mean file was not found: %s. Ignore this message if you know that you do not need it.')
-demandpath(args.experiment + '/data/train_lmdb', 'Please put your training LMDB as %s.')
-demandpath(args.experiment + '/data/val_lmdb', 'Please put your validation LMDB as %s.')
 demandpath(args.experiment + '/model/solver.prototxt', 'Your Caffe solver file should be located at %s.')
 demandpath(args.experiment + '/model/trainval.prototxt', 'Your Caffe network description file should be located at %s.')
 
